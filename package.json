@@ -1,0 +1,17 @@
+{
+  "name": "pdf-stream-text",
+  "version": "1.0.0",
+  "description": "Stream text from PDF file or ArrayBuffer. Based on PDF.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pdf",
+    "stream",
+    "text",
+    "pdf.js"
+  ],
+  "author": "Sergey N <mrauhu@yandex.ru>",
+  "license": "Apache-2.0"
+}
