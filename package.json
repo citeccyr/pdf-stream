@@ -13,5 +13,11 @@
     "pdf.js"
   ],
   "author": "Sergey N <mrauhu@yandex.ru>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "pdfjs-dist": "^1.7.341"
+  },
+  "devDependencies": {
+    "xhr2": "^0.1.4"
+  }
 }
