@@ -20,7 +20,7 @@ new PDFReadable(src)
   .on('error', function(err){
     console.error('PDFReadable error', err);
   })
-  .pipe(new PDFStringifyTransform())
+  .pipe(new PDFStringifyTransform({whitespace: ' '}))
   .pipe(process.stdout)
 ;
 
