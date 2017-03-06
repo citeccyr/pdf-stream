@@ -28,7 +28,6 @@ Based on [PDF.js](https://github.com/mozilla/pdf.js) library.
 #### Text stream from PDF file
 
 ```javascript
-
   'use strict';
   
   const text = require('pdf-stream').text;
