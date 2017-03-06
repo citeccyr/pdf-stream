@@ -1,6 +1,6 @@
 # pdf-stream
 
-[//]: # (TODO: Put more badges here.)
+[![Code Climate](https://codeclimate.com/github/citeccyr/pdf-stream/badges/gpa.svg)](https://codeclimate.com/github/citeccyr/pdf-stream)
 
 > Creates a stream from PDF
 
