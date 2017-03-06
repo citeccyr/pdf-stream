@@ -13,9 +13,9 @@ Based on [PDF.js](https://github.com/mozilla/pdf.js) library.
 - [Install](#install)
 - [Usage](#usage)
 - [API](#api)
-  - [text(options)](#text(options))
-  - [new PDFReadable(options)](new PDFReadable(options))
-  - [new PDFStringifyTransform(options)](new PDFStringifyTransform(options))
+  - [text(options)](#textoptions)
+  - [new PDFReadable(options)](#new-pdfreadableoptions)
+  - [new PDFStringifyTransform(options)](#new-pdfstringifytransformoptions)
 - [Contribute](#contribute)
 - [License](#license)
 
