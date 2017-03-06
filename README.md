@@ -12,6 +12,10 @@ Based on [PDF.js](https://github.com/mozilla/pdf.js) library.
 
 - [Install](#install)
 - [Usage](#usage)
+- [API](#api)
+  - [text(options)](#text(options))
+  - [new PDFReadable(options)](new PDFReadable(options))
+  - [new PDFStringifyTransform(options)](new PDFStringifyTransform(options))
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -63,7 +67,7 @@ Install the [xhr2](https://github.com/pwnall/node-xhr2) library locally:
     .pipe(process.stdout);
 ```
 
-### Advanced usage
+### Advanced
 
 #### Create transform class for replacing string
 
@@ -116,6 +120,53 @@ Install the [xhr2](https://github.com/pwnall/node-xhr2) library locally:
     .pipe(process.stdout);
 ```
 
+## API
+
+All methods are streams, use them with `.pipe()`.
+
+### text(options)
+
+> alternative usage: `text(pdf, whitespace)`
+
+Gets text stream from PDF.
+
+Convert PDF to text, optionally can replace whitespaces.
+
+Options:
+
+* `pdf` — URL or ArrayBuffer;
+* `whitespace` — the string that replaces the whitespace `␣`. Replacement disabled by default.
+
+> In the PDF.js viewer whitespaces is an empty string.
+> For making output comparable with the viewer use: `text(pdf, '')` 
+
+Return: `{stream.Readable}`
+
+### new PDFReadable(options)
+
+> alternative usage: `new PDFReadable(pdf)`
+
+Making the Readable stream in object mode from PDF text content.
+
+Options:
+
+* `pdf` — URL or ArrayBuffer;
+* inherit from `stream.Readable` options.
+
+Return: `{stream.Readable}`
+
+### new PDFStringifyTransform(options)
+
+> alternative usage: `new PDFStringifyTransform(whitespace)`
+
+Transform PDF text content object to string.
+
+Options:
+
+* `whitespace` — the string that replaces the whitespace `␣`. Replacement disabled by default;
+* inherit from `stream.Transform` options.
+
+Return: `{stream.Readable}`
 
 ## Contribute
 
