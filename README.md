@@ -46,7 +46,7 @@ Based on [PDF.js](https://github.com/mozilla/pdf.js) library.
 
 ```
 
-#### Text stream from link to PDF
+#### Text stream from PDF link 
 
 You need the `XMLHttpRequest` as global variable. 
 Install the [xhr2](https://github.com/pwnall/node-xhr2) library locally:
