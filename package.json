@@ -1,6 +1,6 @@
 {
   "name": "pdf-stream",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Creates a stream from PDF",
   "repository": {
     "type": "git",
