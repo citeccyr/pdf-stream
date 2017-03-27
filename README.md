@@ -4,7 +4,7 @@
 
 > Creates a stream from PDF
 
-NPM package for streaming PDF text content.
+Node.js module for streaming PDF text content.
 
 Based on [PDF.js](https://github.com/mozilla/pdf.js) library.
 
