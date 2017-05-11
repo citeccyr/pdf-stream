@@ -67,6 +67,33 @@ Install the [xhr2](https://github.com/pwnall/node-xhr2) library locally:
     .pipe(process.stdout);
 ```
 
+#### Text stream from PDF link with metadata as XML string
+
+If you got error:
+
+```bash
+  ReferenceError: DOMParser is not defined
+```
+
+You need the `DOMParser` as global variable, because PDF.js use it for XML metadata parsing. Install the [xmldom](https://github.com/jindw/xmldom) library locally:
+
+```bash
+  npm i xmldom --save
+```
+
+```javascript
+  'use strict';
+  
+  const text = require('pdf-stream').text;
+  global.XMLHttpRequest = require('xhr2');        // File download 
+  global.DOMParser = require('xmldom').DOMParser; // XML Metadata parsing
+  
+  let pdf = 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf';
+    
+  text(pdf)
+    .pipe(process.stdout);
+```
+
 ### Advanced
 
 #### Create transform class for replacing string
